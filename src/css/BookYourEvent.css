@@ -1,0 +1,67 @@
+.booking-form-container {
+    width: 40%; /* Decreased the width for centering */
+    max-width: 400px; /* Set a reasonable max-width */
+    margin: 40px auto; /* Adjusted top/bottom margins for better spacing */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form content */
+  
+}
+
+h2 {
+    text-align: center;
+    color: #800000;
+    margin-bottom: 20px; /* Added margin for spacing under the title */
+    margin-top:10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input, select, textarea {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    
+}
+
+.book-event-button {
+    width: 70%;
+    padding: 10px;
+    background-color: #800000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-event-button:hover {
+    background-color: #660000;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.book-your-event-container {
+    width: 80%; /* Increased width for better balance */
+    max-width: 500px; /* Adjusted max-width */
+    margin: 60px auto; /* Centering the container with sufficient margin */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center; 
+    
+    
+}

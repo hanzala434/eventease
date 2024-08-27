@@ -1,0 +1,23 @@
+.thank-you-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h2 {
+    color: #800000;
+  }
+  
+  .back-home-button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #800000;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .back-home-button:hover {
+    background-color: #660000;
+  }
+  

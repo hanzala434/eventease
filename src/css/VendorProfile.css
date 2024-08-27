@@ -1,0 +1,160 @@
+/* src/css/VendorProfile.css */
+
+.vendor-profile-container {
+  padding: 20px;
+}
+
+/* General styling */
+.vendor-profile-header {
+  text-align: center;
+}
+
+.vendor-name {
+  font-size: 40px; /* Slightly increased font size */
+  color: #800000;
+  text-align: center; /* Center align the name */
+}
+
+.vendor-category {
+  font-size: 22px; /* Slightly increased font size */
+  color: #555;
+  text-align: center; /* Center align the category */
+}
+
+.trending-section,
+.all-services-section {
+  margin-top: 30px;
+}
+
+.trending-section h2,
+.all-services-section h2 {
+  text-align: center; /* Center align the section headings */
+  font-size: 24px; /* Slightly increased font size */
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.service-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+  width: 250px; /* Set a fixed width to ensure uniform size */
+  height: auto; /* Allow the height to adjust naturally */
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+}
+
+.service-image {
+  width: 100%; /* Make the image responsive */
+  max-width: 220px; /* Set a max-width to ensure equal size */
+  height: 150px; /* Set a fixed height for uniformity */
+  margin-bottom: 10px;
+  border-radius: 8px; /* Slight rounding for a cleaner look */
+  object-fit: cover; /* Ensure the image fits within the container */
+}
+
+.service-name {
+  font-size: 20px; /* Slightly increased font size */
+  color: #000;
+}
+
+.service-price {
+  font-size: 18px; /* Slightly increased font size */
+  color: #555;
+}
+
+.book-event-button {
+  margin-top: 20px;
+  padding: 15px 30px; /* Increase the size of the button */
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center the button */
+  font-size: 18px; /* Slightly increased font size */
+}
+
+.book-event-button:hover {
+  background-color: #660000;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .vendor-profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+
+  .vendor-name {
+    font-size: 32px;
+  }
+
+  .vendor-category {
+    font-size: 20px;
+  }
+
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-item {
+    width: 90%; /* Make items take up most of the screen width */
+    max-width: 500px;
+  }
+
+  .service-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .book-event-button {
+    width: 100%;
+  }
+}
+
+/* Responsive design for very small screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+  .vendor-profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .vendor-name {
+    font-size: 28px;
+  }
+
+  .vendor-category {
+    font-size: 18px;
+  }
+
+  .service-item {
+    padding: 10px;
+  }
+
+  .service-name {
+    font-size: 18px;
+  }
+
+  .service-price {
+    font-size: 16px;
+  }
+
+  .book-event-button {
+    padding: 12px 24px;
+    font-size: 16px; /* Adjust button size on smaller screens */
+  }
+}
