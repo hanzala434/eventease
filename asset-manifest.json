@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.eb36af97.css",
+    "main.js": "/static/js/main.efaee18b.js",
+    "static/js/453.f5af8521.chunk.js": "/static/js/453.f5af8521.chunk.js",
+    "static/media/eventease_logo.png": "/static/media/eventease_logo.cb1166482b5dcf4e6213.png",
+    "index.html": "/index.html",
+    "main.eb36af97.css.map": "/static/css/main.eb36af97.css.map",
+    "main.efaee18b.js.map": "/static/js/main.efaee18b.js.map",
+    "453.f5af8521.chunk.js.map": "/static/js/453.f5af8521.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb36af97.css",
+    "static/js/main.efaee18b.js"
+  ]
+}
