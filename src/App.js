@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginPage from './LoginPage';
 import RegisterPage from './RegisterPage';
 import HomePage from './HomePage';
-import Vendor_Category from './Vendor_Category';
+import VendorCategory from './VendorCategory';
 import Navbar from './Navbar';
 import VendorDecor from './VendorDecor';
 import VendorProfile from './VendorProfile';
@@ -19,7 +19,7 @@ const App = () => {
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
-        <Route path="/vendor_category" element={<Vendor_Category />} />
+        <Route path="/vendor_category" element={<VendorCategory />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/vendors" element={<VendorDecor />} />
         <Route path="/vendors/:id" element={<VendorProfile/>} />
@@ -29,7 +29,7 @@ const App = () => {
 
         
         {/* Define other routes here */}
-        <Route path="*" element={<HomePage />} /> {/* Default route */}
+        <Route path="*" element={<LoginPage />} /> {/* Default route */}
       </Routes>
     </Router>
   );

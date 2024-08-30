@@ -13,7 +13,7 @@ const LoginPage = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/login', { email, password });
+      const response = await axios.post('http://192.168.100.10:5000/api/login', { email, password });
       if (response.data.success) {
         localStorage.setItem('userEmail', email); // Store the email
         navigate('/home');

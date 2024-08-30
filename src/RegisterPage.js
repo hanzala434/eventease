@@ -17,7 +17,7 @@ const RegisterPage = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/register', { email, password });
+      const response = await axios.post('http://192.168.100.10:5000/api/register', { email, password });
       if (response.data.success) {
         navigate('/LoginPage');
       } else {

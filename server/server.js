@@ -12,11 +12,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
+
+
 const accountSid = 'ACb54ee5579135483a65b61fa33cd61157';
 const authToken = '62b8cc83efa86dae4177325cd5a7ba33';
 const client = twilio(accountSid, authToken);
 
-mongoose.connect('mongodb://localhost:27017/eventease', {
+mongoose.connect('mongodb+srv://muhammadhanzala343:hunny786$@event-manager.nwm81.mongodb.net/eventease', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

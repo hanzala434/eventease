@@ -10,7 +10,7 @@ const VendorProfile = () => {
   useEffect(() => {
     const fetchVendorProfile = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/vendors/${id}`);
+        const response = await fetch(`http://192.168.100.10:5000/api/vendors/${id}`);
         const data = await response.json();
         setVendorProfile(data);
       } catch (error) {
@@ -47,7 +47,7 @@ const VendorProfile = () => {
           {trendingServices.length > 0 ? (
             trendingServices.map((service, index) => (
               <div key={index} className="service-item">
-                <img src={service.image} alt={`${service.name} image`} className="service-image" />
+                <img src={service.image} alt={service.name} className="service-image" />
                 <p className="service-name">{service.name}</p>
               </div>
             ))
@@ -70,7 +70,7 @@ const VendorProfile = () => {
           {allServices.length > 0 ? (
             allServices.map((service, index) => (
               <div key={index} className="service-item">
-                <img src={service.image} alt={`${service.name} image`} className="service-image" />
+                <img src={service.image} alt={service.name} className="service-image" />
                 <p className="service-name">{service.name}</p>
                 <p className="service-price">Estimated Price: Rs {service.estimatedPrice}</p>
               </div>

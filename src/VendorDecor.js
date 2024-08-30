@@ -9,7 +9,7 @@ const VendorDecor = () => {
   useEffect(() => {
     const fetchVendors = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/vendors');
+        const response = await fetch('http://192.168.100.10:5000/api/vendors');
         const data = await response.json();
         setVendors(data);
       } catch (error) {

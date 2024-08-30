@@ -27,7 +27,7 @@ const BookYourEvent = () => {
     }
     
     try {
-      const response = await fetch(`http://localhost:5000/api/bookings/${vendorId}`, {
+      const response = await fetch(`http://192.168.100.10:5000/api/bookings/${vendorId}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...formData, vendorId, vendorName }) // Include vendorName in the request body
