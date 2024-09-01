@@ -29,7 +29,7 @@ const App = () => {
 
         
         {/* Define other routes here */}
-        <Route path="*" element={<LoginPage />} /> {/* Default route */}
+        <Route path="*" element={<HomePage />} /> {/* Default route */}
       </Routes>
     </Router>
   );
